@@ -1,0 +1,40 @@
+<html>
+
+<head>
+  <title>Curso Javascript</title>
+</head>
+
+<body>
+
+  <script>
+    function skils(usuarios){
+      var text = '';
+
+      for(usuario of usuarios){
+        text = 'O ' + usuario.nome;
+        text += ' possui as habilidades: ' + usuario.habilidades.join(', ');
+
+        console.log(text);
+
+      }
+
+    }
+
+    var usuarios = [
+      {
+        nome: "Diego",
+        habilidades: ["Javascript", "ReactJS", "Redux"]
+      },
+      {
+        nome: "Gabriel",
+        habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+      }
+    ];
+
+    skils(usuarios);
+
+
+  </script>
+</body>
+
+</html>
