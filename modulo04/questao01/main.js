@@ -1,29 +1,26 @@
-var minhaPromise = function(){
-  return new Promise(function(resolve, reject){
-    var xhr = new XMLHttpRequest();
-    xhr.open('GET', 'https://api.github.com/users/willflame');
-    xhr.send(null);
+var inputElement = document.querySelector('#app input');
+var buttonElement = document.querySelector('#app button');
+var idade = inputElement.value;
 
-    xhr.onreadystatechange = function() {
-      if (xhr.readyState === 4) {
-        if (xhr.status === 200) {
-          resolve(JSON.parse(xhr.responseText));
-        } else {
-          reject('Erro na requisição');
-        }
-      }
+function checaIdade(idade) {
+  return new Promise(function (resolve, reject) {
+    
+    inputElement.innerHTML = '';
+
+    if (idade >= 18) {
+      resolve('Maior que 18');
+    } else {
+      reject('Menor que 18');
     }
   });
 }
 
-minhaPromise()
-.then(function(response) {
-  console.log(response);
-})
-.catch(function(error) {
-  console.warn(error);
-});
+checaIdade(20)
+  .then(function (response) {
+    console.log(response);
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
 
-
-
-
+buttonElement.onclick = checaIdade;
