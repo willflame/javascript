@@ -1,4 +1,4 @@
-# Todos
+# Tarefas
 Cria uma lista de tarefas, utilizando javaScript.
 
 ## Funções:
@@ -6,5 +6,5 @@ Cria uma lista de tarefas, utilizando javaScript.
 - Excluir tarefa;
 
 ## Aprendizado
-Manipulação de elementos na DOM;
-Persistencia da lista de tarefas no localStorage;
+- Manipulação de elementos na DOM;
+- Persistencia da lista de tarefas no localStorage;

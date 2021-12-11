@@ -1,10 +1,10 @@
-var minhaPromise = function(){
-  return new Promise(function(resolve, reject){
+var myPromise = () => {
+  return new Promise((resolve, reject) => {
     var xhr = new XMLHttpRequest();
     xhr.open('GET', 'https://api.github.com/users/willflame');
     xhr.send(null);
 
-    xhr.onreadystatechange = function() {
+    xhr.onreadystatechange = () => {
       if (xhr.readyState === 4) {
         if (xhr.status === 200) {
           resolve(JSON.parse(xhr.responseText));
@@ -16,11 +16,11 @@ var minhaPromise = function(){
   });
 }
 
-minhaPromise()
-.then(function(response) {
+myPromise()
+.then((response) => {
   console.log(response);
 })
-.catch(function(error) {
+.catch((error) => {
   console.warn(error);
 });
 

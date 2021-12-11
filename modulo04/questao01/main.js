@@ -1,34 +1,33 @@
-var inputElement = document.querySelector('#app input');
-var buttonElement = document.querySelector('#app button');
+var inputElement = document.querySelector("#app input");
+var buttonElement = document.querySelector("#app button");
 
-var checaIdade = function(idade) {
-  return new Promise(function(resolve, reject) {
-
+var checaIdade = (idade) => {
+  return new Promise((resolve, reject) => {
     if (idade >= 18) {
-      inputElement.value = '';
+      inputElement.value = "";
 
-      resolve('Maior que 18');
+      resolve("Maior que 18");
     } else {
-      inputElement.value = '';
+      inputElement.value = "";
 
-      reject('Menor que 18');
+      reject("Menor que 18");
     }
   });
-}
+};
 
-function verifica(){
+function verifica() {
   var idade = inputElement.value;
 
   checaIdade(idade)
-    .then(function (response) {
+    .then((response) => {
       console.log(response);
     })
-    .catch(function (error) {
+    .catch((error) => {
       console.warn(error);
     });
 }
 
-function acinamento(){
+function acinamento() {
   setTimeout(verifica, 2000);
 }
 

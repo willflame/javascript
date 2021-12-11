@@ -9,7 +9,7 @@ var todos = JSON.parse(localStorage.getItem('list_todos')) || [];
 /**
  * Função que renderiza as tarefas na pagina
  */
-function renderTodos(){
+function renderTodos() {
   listElement.innerHTML = '';
 
   for(let todo of todos){
@@ -44,7 +44,7 @@ renderTodos();
 /**
  * Adiciona uma tarefa a lista
  */
-function addTodo(){
+function addTodo() {
   let todoText = inputElement.value;
 
   todos.push(todoText);
@@ -60,7 +60,7 @@ buttonElement.onclick = addTodo;
  * Remove uma tarefa da lista
  * @param index Posição da tarefa no array
  */
-function deleteTodo(index){
+function deleteTodo(index) {
   todos.splice(index, 1);
   renderTodos();
   saveToStorage();
@@ -69,6 +69,6 @@ function deleteTodo(index){
 /**
  * Salavar as tarefas n localStorage
  */
-function saveToStorage(){
+function saveToStorage() {
   localStorage.setItem('list_todos', JSON.stringify(todos));
 }
