@@ -1,6 +1,8 @@
 # Contador
-
 Este projeto consiste a criação simples de um contador em JavaScript.
+Para estudar Sintaxe Básica em JavaScript;
+
+<img src="./contador.png" alt="Contador" style="margin: 0 auto;">
 
 ## Utilizado: 
 - Manipulação da DOM com valore e estilos,
