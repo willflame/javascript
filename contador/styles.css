@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(218, 214, 214);
+    font-size: 3rem;
+}
+
+button {
+    width: 4rem;
+    height: 4rem;
+    margin: 0 0.5rem;
+    border-radius: 1rem;
+    border: 0.1rem solid rgb(1, 158, 255);
+    background-color: #fff;
+    color: rgb(1, 158, 255);
+    font-size: 3.6rem;
+    font-weight: 400;
+    line-height: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button#clear {
+    width: auto;
+    margin-top: 2rem;
+    padding: 0 1.6rem;
+    font-size: 2rem;
+}
+
+button:disabled {
+    opacity: 0.3;
+    background-color: #a3a6a9;
+}
+
+#counter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#currentNumber {
+    display: flex;
+    align-items: center;
+    margin: 0 2rem;
+    font-size: 3.6rem;
+    color: green;
+}
