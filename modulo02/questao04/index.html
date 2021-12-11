@@ -8,45 +8,43 @@
     <script>
       var nomes = ["Diego", "Gabriel", "Lucas"];
 
-      var listElement = document.querySelector('ul');
+      var listElement = document.querySelector("ul");
 
-      var conteudo = document.querySelector('body');
+      var conteudo = document.querySelector("body");
 
-      var input = document.createElement('input');
-        input.setAttribute('type', 'text');
+      var input = document.createElement("input");
+      input.setAttribute("type", "text");
 
-      var button = document.createElement('button');
-      var textButton = document.createTextNode('Adicionar');
-        button.appendChild(textButton);
-        button.onclick = function adicionar(){
-          var value = document.querySelector('input').value;
-          if(value !== ''){
-            var linha = document.createElement('li');
-            var text = document.createTextNode(value);
+      var button = document.createElement("button");
+      var textButton = document.createTextNode("Adicionar");
+      button.appendChild(textButton);
+      button.onclick = function adicionar() {
+        var value = document.querySelector("input").value;
+        if (value !== "") {
+          var linha = document.createElement("li");
+          var text = document.createTextNode(value);
 
-            linha.appendChild(text);
+          linha.appendChild(text);
 
-            listElement.appendChild(linha);
-          }else{
-            alert('Favor inserir um texto valido.');
-          }
-        };
-      
+          listElement.appendChild(linha);
+        } else {
+          alert("Favor inserir um texto valido.");
+        }
+      };
+
       conteudo.appendChild(input);
       conteudo.appendChild(button);
 
       console.log(input, button);
 
-      for(nome of nomes){
-        var linha = document.createElement('li');
+      for (nome of nomes) {
+        var linha = document.createElement("li");
         var text = document.createTextNode(nome);
 
         linha.appendChild(text);
 
         listElement.appendChild(linha);
-        
       }
-      
     </script>
   </body>
 </html>

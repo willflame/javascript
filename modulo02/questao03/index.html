@@ -8,18 +8,16 @@
     <script>
       var nomes = ["Diego", "Gabriel", "Lucas"];
 
-      var listElement = document.querySelector('ul');
+      var listElement = document.querySelector("ul");
 
-      for(nome of nomes){
-        var linha = document.createElement('li');
+      for (nome of nomes) {
+        var linha = document.createElement("li");
         var text = document.createTextNode(nome);
 
         linha.appendChild(text);
 
         listElement.appendChild(linha);
-        
       }
-      
     </script>
   </body>
 </html>

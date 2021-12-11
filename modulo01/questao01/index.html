@@ -3,30 +3,27 @@
     <title>Curso Javascript</title>
   </head>
   <body>
-
     <script>
-      function info(endereco){
-        var text = '';
-        text = 'O usuário mora em '+ endereco.cidade;
-        text += ' / ' + endereco.uf;
-        text += ' no bairro ' + endereco.bairro;
+      function info(endereco) {
+        var text = "";
+        text = "O usuário mora em " + endereco.cidade;
+        text += " / " + endereco.uf;
+        text += " no bairro " + endereco.bairro;
         text += ', na rua "' + endereco.rua;
         text += '" com nº ' + endereco.numero;
 
-        return text;  
-      };
+        return text;
+      }
 
       var endereco = {
         rua: "Rua dos pinheiros",
         numero: 1293,
         bairro: "Centro",
         cidade: "São Paulo",
-        uf: "SP"
+        uf: "SP",
       };
 
       console.log(info(endereco));
-
-
     </script>
   </body>
 </html>

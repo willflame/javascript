@@ -1,54 +1,49 @@
 <html>
+  <head>
+    <title>Curso Javascript</title>
+  </head>
 
-<head>
-  <title>Curso Javascript</title>
-</head>
+  <body class="box">
+    <button>Click</button>
 
-<body class="box">
+    <script>
+      var buttonElement = document.querySelector(".box button");
 
-  <button>Click</button>
+      console.log(buttonElement);
 
-  <script>
-    var buttonElement = document.querySelector('.box button');
+      var boxElement = document.querySelector(".box");
+      var id = 0;
 
-    console.log(buttonElement);
+      buttonElement.onclick = function () {
+        var newQuadrado = document.createElement("div");
+        newQuadrado.setAttribute("id", id);
+        newQuadrado.style.width = 100;
+        newQuadrado.style.height = 100;
+        newQuadrado.style.backgroundColor = "#f03";
+        newQuadrado.setAttribute("onmouseover", "trocaCor(this)");
 
-    var boxElement = document.querySelector('.box');
-    var id = 0;
+        console.log(newQuadrado);
+        id++;
 
-    buttonElement.onclick = function () {
-      var newQuadrado = document.createElement('div');
-      newQuadrado.setAttribute("id", id);
-      newQuadrado.style.width = 100;
-      newQuadrado.style.height = 100;
-      newQuadrado.style.backgroundColor = '#f03';
-      newQuadrado.setAttribute('onmouseover', "trocaCor(this)");
+        boxElement.appendChild(newQuadrado);
+      };
 
-      console.log(newQuadrado);
-      id++;
+      function trocaCor(div) {
+        var newColor = getRandomColor(); // #E943F0
 
-      boxElement.appendChild(newQuadrado);
-    }
+        var quadrado = document.getElementsByTagName("div")[div.id];
 
-    function trocaCor(div){
-      var newColor = getRandomColor(); // #E943F0
-
-      var quadrado = document.getElementsByTagName('div')[div.id];
-
-      quadrado.style.backgroundColor = newColor;
-    }
-
-
-    function getRandomColor() {
-      var letters = "0123456789ABCDEF";
-      var color = "#";
-      for (var i = 0; i < 6; i++) {
-        color += letters[Math.floor(Math.random() * 16)];
+        quadrado.style.backgroundColor = newColor;
       }
-      return color;
-    }
 
-  </script>
-</body>
-
+      function getRandomColor() {
+        var letters = "0123456789ABCDEF";
+        var color = "#";
+        for (var i = 0; i < 6; i++) {
+          color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+      }
+    </script>
+  </body>
 </html>
