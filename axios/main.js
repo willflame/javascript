@@ -1,11 +1,17 @@
 //biblioteca axios
 //https://github.com/axios/axios
+var app = document.getElementById('app');
 
 axios.get('https://api.github.com/users/willflame')
-.then(function(response) {
+.then((response) => {
   console.log(response);
+
+  const name = document.createElement('div');
+  name.innerHTML = `Nome: ${response.data['name']}`;
+
+  app.appendChild(name);
 })
-.catch(function(error) {
+.catch((error) => {
   console.warn(error);
 });
 
