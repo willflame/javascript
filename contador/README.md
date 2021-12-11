@@ -2,12 +2,12 @@
 Este projeto consiste a criação simples de um contador em JavaScript.
 Para estudar Sintaxe Básica em JavaScript;
 
-<img src="./contador.png" alt="Contador" style="margin: 0 auto;">
+<img src="./contador.png" alt="Contador">
 
 ## Utilizado: 
 - Manipulação da DOM com valore e estilos,
 - Utilização de condicionais;
-- Funções e Arroy functions;
+- Funções e Arrow functions;
 - AddEventListener em um conteudo (click, do botão Limpar contador);
 
 
