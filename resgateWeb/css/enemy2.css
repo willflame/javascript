@@ -1,0 +1,8 @@
+.animationEnemy2 {
+  background-image: url(../assets/imgs/enemy2.png);
+  /* animation: playEnemy1 0.5s steps(2) infinite;
+  -webkit-animation: playEnemy1 0.5s steps(2) infinite;
+  -moz-animation: playEnemy1 0.5s steps(2) infinite;
+  -ms-animation: playEnemy1 0.5s steps(2) infinite;
+  -o-animation: playEnemy1 0.5s steps(2) infinite; */
+}

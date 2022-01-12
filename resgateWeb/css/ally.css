@@ -1,0 +1,53 @@
+.animationAlly {
+  background-image: url(../assets/imgs/ally.png);
+  animation: playAlly 0.9s steps(12) infinite;
+  -webkit-animation: playAlly 0.9s steps(12) infinite;
+  -moz-animation: playAlly 0.9s steps(12) infinite;
+  -ms-animation: playAlly 0.9s steps(12) infinite;
+  -o-animation: playAlly 0.9s steps(12) infinite;
+}
+
+@keyframes playAlly {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -528px;
+  }
+}
+
+@-webkit-keyframes playAlly {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -528px;
+  }
+}
+
+@-moz-keyframes playAlly {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -528px;
+  }
+}
+
+@-ms-keyframes playAlly {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -528px;
+  }
+}
+
+@-o-keyframes playAlly {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -528px;
+  }
+}
