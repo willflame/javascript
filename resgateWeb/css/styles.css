@@ -1,0 +1,77 @@
+@font-face {
+  font-family: Titulo;
+  src: url(../assets/fontes/ANODETONOONE.TTF);
+}
+
+body {
+  background-image: url(../assets/imgs/background.jpg);
+}
+
+h1 {
+  font-family: Titulo;
+  font-size: 40px;
+  color: #603a03;
+}
+
+#container {
+  width: 950px;
+  height: auto;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#backgroundGame {
+  width: 950px;
+  height: 630px;
+  background-image: url(../assets/imgs/background_game.jpg);
+  border-color: #fff;
+  border-style: solid;
+}
+
+#player {
+  width: 256px;
+  height: 66px;
+  position: absolute;
+  left: 8px;
+  top: 179px;
+  background-image: url(../assets/imgs/apache.png);
+}
+
+#enemy1 {
+  width: 256px;
+  height: 66px;
+  position: absolute;
+  left: 689px;
+  top: 253px;
+  background-image: url(../assets/imgs/enemy1.png);
+}
+
+#enemy2 {
+  width: 165px;
+  height: 70px;
+  position: absolute;
+  left: 775px;
+  top: 447px;
+  background-image: url(../assets/imgs/enemy2.png);
+}
+
+#ally {
+  width: 44px;
+  height: 51px;
+  position: absolute;
+  left: 10px;
+  top: 464px;
+  background-image: url(../assets/imgs/ally.png);
+}
+
+#start {
+  width: 350px;
+  height: 200px;
+  background-color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  text-align: center;
+  padding: 10px;
+}
