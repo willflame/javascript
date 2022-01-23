@@ -43,6 +43,7 @@ function verifica() {
 
         linkText = document.createTextNode(repos.name);
         linkUrl.setAttribute("href", repos.html_url);
+        linkUrl.setAttribute("target", 'blank');
         linkUrl.appendChild(linkText);
 
         linhaRepos.appendChild(linkUrl);
