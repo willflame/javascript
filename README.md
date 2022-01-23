@@ -2,16 +2,6 @@
 
 --Modulo 02
 
-3º exercício
-A partir do seguinte vetor:
-
-var nomes = ["Diego", "Gabriel", "Lucas"];
-
-Preencha uma lista (<ul>) no HTML com os itens da seguinte forma:
-● Diego
-● Gabriel
-● Lucas
-
 4º exercício
 Seguindo o resultado do exercício anterior adicione um input em tela e um botão como a seguir:
 

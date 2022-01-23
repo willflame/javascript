@@ -89,3 +89,12 @@ function getRandomColor() {
 }
 var newColor = getRandomColor(); // #E943F0
 
+## Exercicio - 08
+A partir do seguinte vetor:
+
+var nomes = ["Diego", "Gabriel", "Lucas"];
+
+Preencha uma lista (<ul>) no HTML com os itens da seguinte forma:
+● Diego
+● Gabriel
+● Lucas
