@@ -1,18 +1,4 @@
 # willian0506-hotmail.com
-
---Modulo 02
-
-4º exercício
-Seguindo o resultado do exercício anterior adicione um input em tela e um botão como a seguir:
-
-<input type="text" name="nome">
-<button onClick="adicionar()">Adicionar</button>
-
-Ao clicar no botão, a função adicionar() deve ser disparada adicionando um novo item a lista de
-nomes baseado no nome preenchido no input e renderizando o novo item em tela juntos aos
-demais itens anteriores. Além disso, o conteúdo do input deve ser apagado após o clique.
-
-
 --Modulo 04
 
 Exercícios: Módulo 04
