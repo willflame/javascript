@@ -99,7 +99,7 @@ Preencha uma lista (<ul>) no HTML com os itens da seguinte forma:
 ● Gabriel
 ● Lucas
 
-## Exercicio - 08
+## Exercicio - 09
 Seguindo o resultado do exercício anterior adicione um input em tela e um botão como a seguir:
 
 <input type="text" name="nome">
@@ -108,3 +108,9 @@ Seguindo o resultado do exercício anterior adicione um input em tela e um botã
 Ao clicar no botão, a função add() deve ser disparada adicionando um novo item a lista de
 nomes baseado no nome preenchido no input e renderizando o novo item em tela juntos aos
 demais itens anteriores. Além disso, o conteúdo do input deve ser apagado após o clique.
+
+## Exercicio - 10
+Crie uma função que recebe a idade de um usuário e retorna uma Promise que depois de 2
+segundos retornará se usuário é maior ou não que 18 anos. Se o usuário ter mais que 18 anos de
+idade o resultado deve cair no .then, caso contrário, no .catch.
+
