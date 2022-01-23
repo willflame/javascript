@@ -16,7 +16,7 @@ O usuário mora em São Paulo/SP, no bairro Centro, na rua "Rua dos Pinheiros" c
 nº 1293.
 
 ## Exercicio - 02
-Crie uma função que dado um intervalo (entre x e y) exiba todos número pares;
+Crie uma função que dado um intervalo (entre x e y) exiba todos número pares.
 
 Daods os valores:
 (32, 62);
@@ -36,7 +36,8 @@ Deve retornar:
 true;
 
 ## Exercicio - 04
-Escreva uma função que dado um total de anos de estudo retorna o quão experiente o usuário é:
+Escreva uma função que dado um total de anos de estudo retorna o quão experiente o usuário é.
+
 Dado o valor:
 7;
 
@@ -46,3 +47,26 @@ Jedi Master
 // De 1-3 anos: Intermediário
 // De 3-6 anos: Avançado
 // De 7 acima: Jedi Master
+
+
+## Exercicio - 05
+Escreva uma função que percorra os objetos e retorne as habilidades dos usuários.
+Dica: Para percorrer um vetor você deve utilizar a sintaxe for...of e para unir valores de um array
+com um separador utilize o join.
+
+Dado o seguinte vetor de objetos:
+
+users = [
+ {
+    nome: "Diego",
+    habilidades: ["Javascript", "ReactJS", "Redux"]
+ },
+ {
+    nome: "Gabriel",
+    habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+ }
+];
+
+Deve retornar:
+O Diego possui as habilidades: Javascript, ReactJS, Redux
+O Gabriel possui as habilidades: VueJS, Ruby on Rails, Elixir
