@@ -48,7 +48,6 @@ Jedi Master
 // De 3-6 anos: Avançado
 // De 7 acima: Jedi Master
 
-
 ## Exercicio - 05
 Escreva uma função que percorra os objetos e retorne as habilidades dos usuários.
 Dica: Para percorrer um vetor você deve utilizar a sintaxe for...of e para unir valores de um array
@@ -70,3 +69,8 @@ users = [
 Deve retornar:
 O Diego possui as habilidades: Javascript, ReactJS, Redux
 O Gabriel possui as habilidades: VueJS, Ruby on Rails, Elixir
+
+## Exercicio - 06
+Crie um botão que ao ser clicado cria um novo elemento em tela com a forma de um quadrado
+vermelho com 100px de altura e largura. Sempre que o botão for clicado um novo quadrado deve
+aparecer na tela.
