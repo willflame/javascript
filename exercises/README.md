@@ -30,7 +30,19 @@ e retorna um booleano true/false caso exista ou não.
 Dica: para verificar se um vetor contém um valor, utilize o método indexOf
 
 Dado o valor:
-var skills = ["Javascript", "ReactJS", "React Native"];
+["Javascript", "ReactJS", "React Native"];
 
 Deve retornar:
 true;
+
+## Exercicio - 04
+Escreva uma função que dado um total de anos de estudo retorna o quão experiente o usuário é:
+Dado o valor:
+7;
+
+Deve retornar:
+Jedi Master
+// De 0-1 ano: Iniciante
+// De 1-3 anos: Intermediário
+// De 3-6 anos: Avançado
+// De 7 acima: Jedi Master
