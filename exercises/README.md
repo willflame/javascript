@@ -17,7 +17,20 @@ nº 1293.
 
 ## Exercicio - 02
 Crie uma função que dado um intervalo (entre x e y) exiba todos número pares;
-Daods os valores (32, 62);
+
+Daods os valores:
+(32, 62);
 
 Deve retornar:
 32, 34, 36, 38, 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60, 62.
+
+## Exercicio - 03
+Escreva uma função que verifique se o vetor de habilidades passado possui a habilidade "Javascript"
+e retorna um booleano true/false caso exista ou não.
+Dica: para verificar se um vetor contém um valor, utilize o método indexOf
+
+Dado o valor:
+var skills = ["Javascript", "ReactJS", "React Native"];
+
+Deve retornar:
+true;
