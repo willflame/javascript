@@ -1,16 +1,6 @@
 # willian0506-hotmail.com
-javascript
-
-Introcução a javaScript com funções para fixação da pratica em utilizar a linguagem.
 
 --Modulo 01
-2º exercício
-Crie uma função que dado um intervalo (entre x e y) exiba todos número pares:
-
-function pares(x, y) {
- // código aqui
-}
-pares(32, 321);
 
 3º exercício
 Escreva uma função que verifique se o vetor de habilidades passado possui a habilidade "Javascript"
