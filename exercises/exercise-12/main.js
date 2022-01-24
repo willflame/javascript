@@ -4,8 +4,13 @@ var buttonElement = document.querySelector("#app button");
 var userRepos = document.querySelector("#app h2");
 var listRepos = document.querySelector("#app ul");
 
-function verifica() {
+function verifyUser() {
   var user = inputElement.value;
+
+  if (!user) {
+    alert('informe um usuário');
+    return;
+  };
 
   var userText = document.createTextNode("Repositorios do usuário: " + user);
   userRepos.appendChild(userText);
@@ -16,7 +21,7 @@ function verifica() {
   linhaRepos.appendChild(linhaText);
   listRepos.appendChild(linhaRepos);
 
-  var minhaPromise = function () {
+  var myPromise = function () {
     return new Promise(function (resolve, reject) {
       var xhr = new XMLHttpRequest();
       xhr.open("GET", "https://api.github.com/users/" + user + "/repos");
@@ -36,7 +41,7 @@ function verifica() {
     });
   };
 
-  minhaPromise()
+  myPromise()
     .then(function (response) {
       //var app = document.querySelector('#app');
       //var listRepos = document.querySelector('ul');
@@ -48,7 +53,7 @@ function verifica() {
       listRepos.innerHTML = "";
 
       var userText = document.createTextNode(
-        "Lista de repositorios do usuário: " + user
+        `Lista de repositorios do usuário: ${user}`
       );
       userRepos.appendChild(userText);
       app.appendChild(userRepos);
@@ -72,7 +77,7 @@ function verifica() {
         listRepos.innerHTML = "";
 
         var userText = document.createTextNode(
-          "O usuário " + user + " não esta cadastrado no Github "
+          `O usuário ${user} não esta cadastrado no Github.`
         );
         userRepos.appendChild(userText);
         app.appendChild(userRepos);
@@ -87,4 +92,4 @@ function verifica() {
     });
 }
 
-buttonElement.onclick = verifica;
+buttonElement.onclick = verifyUser;

@@ -1,10 +1,10 @@
 var inputElement = document.querySelector("#app input");
 var buttonElement = document.querySelector("#app button");
 
-function verifica() {
+function verifyUser() {
   var user = inputElement.value;
 
-  var minhaPromise = function () {
+  var myPromise = function () {
     return new Promise(function (resolve, reject) {
       var xhr = new XMLHttpRequest();
       xhr.open("GET", "https://api.github.com/users/" + user + "/repos");
@@ -23,7 +23,7 @@ function verifica() {
     });
   };
 
-  minhaPromise()
+  myPromise()
     .then(function (response) {
       var app = document.querySelector("#app");
       var listRepos = document.createElement("ul");
@@ -32,7 +32,7 @@ function verifica() {
 
       var userRepos = document.createElement("h2");
       var userText = document.createTextNode(
-        "Lista de repositorios do usuário: " + user
+        `Lista de repositorios do usuário: ${user}`
       );
       userRepos.appendChild(userText);
       app.appendChild(userRepos);
@@ -53,8 +53,8 @@ function verifica() {
       console.log(response);
     })
     .catch(function (error) {
-      console.warn(error);
+      console.log(error);
     });
 }
 
-buttonElement.onclick = verifica;
+buttonElement.onclick = verifyUser;

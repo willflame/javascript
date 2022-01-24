@@ -4,6 +4,7 @@
   outline: 0;
   box-sizing: border-box;
 }
+
 html {
   font-size: 62.5%;
 }
@@ -45,18 +46,18 @@ button:hover {
 }
 
 #app{
-  margin-top: 40px;
+  margin-top: 4rem;
 }
 
 #app h2, #app ul{
-  margin-top: 20px;
+  margin-top: 2rem;
   color: #75727c;
 }
 
 #app ul, #app ul li, #app ul li a{
   text-decoration: none;
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
   color: #75727c;
   transition: 0.5s;
 }
