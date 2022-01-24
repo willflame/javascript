@@ -1,1 +1,2 @@
-# willian0506-hotmail.com
+# Repositório JavaScript
+Este repositório tem com objetivo guardar projetos para estudo e aprendizagem de lógica de programação aplicado em JavaScript, assim criando uma coleção de exercicios para base de conhecimento.
