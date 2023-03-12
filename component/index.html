@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./src/styles/global.css">
+
+    <link rel="stylesheet" href="./src/styles/card-news.css">
+    <!-- Atributo "defer" define que o carregamento do arquivo importado
+        deve começar após carregar todos os elementos no DOM -->
+    <script src="src/components/CardNews.js" defer></script>
+    <script src="src/components/DynamicTitle.js" defer></script>
+</head>
+<body>
+    <dynamic-title title="Title Component"></dynamic-title>
+    <card-news
+        author="Megazordy"
+        title="First Card"
+        link-title="www.dio.me"
+        content="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis"
+        photo="src/assets/megazordy.jpg"
+        alt="TurboZord"
+    ></card-news>
+</body>
+</html>
